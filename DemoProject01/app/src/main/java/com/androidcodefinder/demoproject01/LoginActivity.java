@@ -1,8 +1,6 @@
 package com.androidcodefinder.demoproject01;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +16,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends HomeActivity {
 
     private EditText loginEmail, loginPassword;
     private TextView signupRedirectText;
@@ -51,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                                     public void onSuccess(AuthResult authResult) {
                                         Toast.makeText(LoginActivity.this, "", Toast.LENGTH_SHORT).show();
                                         Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                        startActivity(new Intent(LoginActivity.this, homeActivity.class));
                                         finish();
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
@@ -69,7 +67,12 @@ public class LoginActivity extends AppCompatActivity {
                     loginEmail.setError("Please enter correct email");
                 }
             }
-        });
+//        public void openHomeActivity(View view ) {
+//            Intent intent = new Intent(this, homeActivity.class);
+//            startActivity(intent);
+//        }
+    });
+
     }
 }
 
