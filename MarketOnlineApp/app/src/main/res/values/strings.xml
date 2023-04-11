@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">DemoProject01</string>
+    <string name="app_name">Home</string>
+
+
+    <string name="date">A thin wrapper ......
+        </string>
+
+    <string name="rating">A RatingBar .....
+        </string>
+
+    <string name="edit">A TextView d
+        </string>
+
+    <string name="camera">The Android framework ...
+        </string>
+
+    <string name="recyclerview">RecyclerView ...
+    </string>
 </resources>
