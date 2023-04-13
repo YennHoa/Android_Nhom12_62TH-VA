@@ -32,7 +32,7 @@ public class ProductDetails extends AppCompatActivity {
         proDesc = findViewById(R.id.prodDesc);
         proPrice = findViewById(R.id.prodPrice);
         img = findViewById(R.id.big_image);
-        //back = findViewById(R.id.back2);
+        back = findViewById(R.id.back2);
         proQty = findViewById(R.id.qty);
         proUnit = findViewById(R.id.unit);
 

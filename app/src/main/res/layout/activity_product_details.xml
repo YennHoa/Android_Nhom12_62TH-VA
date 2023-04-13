@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/lavender"
     tools:context=".ProductDetails">
 
     <ImageView
@@ -18,6 +18,17 @@
         app:srcCompat="@drawable/ic_cart_black" />
 
     <ImageView
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+    <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +58,7 @@
         android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/big_image"/>
+        app:layout_constraintTop_toBottomOf="@+id/big_image" />
 
 
     <TextView
@@ -69,6 +80,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/lavender"
         android:text="Buy Now"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -102,7 +114,7 @@
         android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/prodDesc"
-        app:layout_constraintTop_toBottomOf="@+id/prodDesc"/>
+        app:layout_constraintTop_toBottomOf="@+id/prodDesc" />
 
     <TextView
         android:id="@+id/qty"
@@ -111,7 +123,7 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/prodPrice"
-        app:layout_constraintTop_toBottomOf="@+id/prodPrice"/>
+        app:layout_constraintTop_toBottomOf="@+id/prodPrice" />
 
     <TextView
         android:id="@+id/unit"
@@ -122,18 +134,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/qty"
         app:layout_constraintStart_toEndOf="@+id/qty"
         app:layout_constraintTop_toTopOf="@+id/qty" />
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

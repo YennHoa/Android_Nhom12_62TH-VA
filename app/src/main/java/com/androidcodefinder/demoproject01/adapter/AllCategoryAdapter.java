@@ -61,7 +61,7 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
 
 }
 
-// lets import all the category images
+
 
 
 

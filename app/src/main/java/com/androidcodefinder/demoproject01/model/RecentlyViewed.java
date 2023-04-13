@@ -3,6 +3,7 @@ package com.androidcodefinder.demoproject01.model;
 import android.graphics.drawable.Drawable;
 
 public class RecentlyViewed {
+
     String name;
     String description;
     String price;
@@ -40,6 +41,10 @@ public class RecentlyViewed {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getPrice() {

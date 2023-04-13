@@ -15,8 +15,6 @@ import com.androidcodefinder.demoproject01.model.DiscountedProducts;
 
 import java.util.List;
 
-
-
 public class DiscountedProductAdapter extends RecyclerView.Adapter<DiscountedProductAdapter.DiscountedProductViewHolder> {
 
     Context context;

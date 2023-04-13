@@ -47,19 +47,20 @@ public class RecentlyViewedAdapter extends RecyclerView.Adapter<RecentlyViewedAd
             @Override
             public void onClick(View view) {
 
-                Intent i=new Intent(context, ProductDetails.class);
+                Intent i = new Intent(context, ProductDetails.class);
                 i.putExtra("name", recentlyViewedList.get(position).getName());
                 i.putExtra("image", recentlyViewedList.get(position).getBigimageurl());
-                i.putExtra("price",recentlyViewedList.get(position).getPrice());
-                i.putExtra("desc",recentlyViewedList.get(position).getDescription());
-                i.putExtra("qty",recentlyViewedList.get(position).getQuantity());
-                i.putExtra("unit",recentlyViewedList.get(position).getUnit());
+                i.putExtra("price", recentlyViewedList.get(position).getPrice());
+                i.putExtra("desc", recentlyViewedList.get(position).getDescription());
+                i.putExtra("qty", recentlyViewedList.get(position).getQuantity());
+                i.putExtra("unit", recentlyViewedList.get(position).getUnit());
 
                 context.startActivity(i);
 
             }
         });
     }
+
     @Override
     public int getItemCount() {
         return recentlyViewedList.size();
@@ -84,5 +85,8 @@ public class RecentlyViewedAdapter extends RecyclerView.Adapter<RecentlyViewedAd
     }
 
 }
+
+
+
 
 

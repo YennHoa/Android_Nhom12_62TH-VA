@@ -44,6 +44,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     public int getItemCount() {
         return categoryList.size();
     }
+
     public  static class CategoryViewHolder extends RecyclerView.ViewHolder{
 
         ImageView categoryImage;

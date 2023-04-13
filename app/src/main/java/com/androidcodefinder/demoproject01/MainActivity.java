@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 import static com.androidcodefinder.demoproject01.R.drawable.*;
+
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView discountRecyclerView, categoryRecyclerView, recentlyViewedRecycler;
@@ -63,28 +64,29 @@ public class MainActivity extends AppCompatActivity {
         discountedProductsList.add(new DiscountedProducts(1, graphe));
         discountedProductsList.add(new DiscountedProducts(2, offer2));
         discountedProductsList.add(new DiscountedProducts(3, orange));
-        discountedProductsList.add(new DiscountedProducts(4, discountberry));
-        discountedProductsList.add(new DiscountedProducts(5, discountbrocoli));
+        discountedProductsList.add(new DiscountedProducts(4, slider1));
+        discountedProductsList.add(new DiscountedProducts(5, slider3));
         discountedProductsList.add(new DiscountedProducts(6, discountmeat));
 
 
         // adding data to model
         categoryList = new ArrayList<>();
         categoryList.add(new Category(1, ic_home_fruits));
-        categoryList.add(new Category(2, ic_home_fish));
+        categoryList.add(new Category(2, ic_home_veggies));
         categoryList.add(new Category(3, ic_home_meats));
-        categoryList.add(new Category(4, ic_home_veggies));
+        categoryList.add(new Category(4, ic_home_fish));
         categoryList.add(new Category(5, ic_home_fruits));
         categoryList.add(new Category(6, ic_home_fish));
         categoryList.add(new Category(7, ic_home_meats));
         categoryList.add(new Category(8, ic_home_veggies));
 
+
         // adding data to model
         recentlyViewedList = new ArrayList<>();
-        recentlyViewedList.add(new RecentlyViewed("Watermelon", "Watermelon has high water content and also provides some fiber.", "$ 16", "1", "KG", card4, b4));
-        recentlyViewedList.add(new RecentlyViewed("Papaya", "Papayas are spherical or pear-shaped fruits that can be as long as 20 inches.", "$ 25", "1", "KG", card3, b3));
-        recentlyViewedList.add(new RecentlyViewed("Strawberry", "The strawberry is a highly nutritious fruit, loaded with vitamin C.", "$ 30", "1", "KG", card2, b1));
-        recentlyViewedList.add(new RecentlyViewed("Kiwi", "Full of nutrients like vitamin C, vitamin K, vitamin E, folate, and potassium.", "$ 9", "1", "PC", card1, b2));
+        recentlyViewedList.add(new RecentlyViewed("Watermelon", "Watermelon is a low-calorie fruit, a good source of vitamin C, vitamin A, and potassium.", "$ 16", "1", "KG", card4, b4));
+        recentlyViewedList.add(new RecentlyViewed("Papaya", "The fruit is soft and juicy.Papaya is loaded with vitamins, minerals, and antioxidants,help promote digestive health.", "$ 25", "1", "KG", card3, b3));
+        recentlyViewedList.add(new RecentlyViewed("Strawberry", "Strawberries a slightly floral flavor, depending on the variety.A ripe strawberry is soft and juicy, with a slight crunch from the seeds.", "$ 30", "1", "KG", card2, b1));
+        recentlyViewedList.add(new RecentlyViewed("Kiwi", "Full of nutrients like vitamin C, vitamin K, vitamin E, folate, and potassium.Kiwi is a highly nutritious fruit.", "$ 9", "1", "PC", card1, b2));
 
         setDiscountedRecycler(discountedProductsList);
         setCategoryRecycler(categoryList);
