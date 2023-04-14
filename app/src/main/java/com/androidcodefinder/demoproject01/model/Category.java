@@ -3,11 +3,11 @@ package com.androidcodefinder.demoproject01.model;
 public class Category {
 
     Integer id;
-    Integer imageurl;
+    Integer image;
 
-    public Category(Integer id, Integer imageurl) {
+    public Category(Integer id, Integer image) {
         this.id = id;
-        this.imageurl = imageurl;
+        this.image = image;
     }
 
     public Integer getId() {
@@ -18,12 +18,12 @@ public class Category {
         this.id = id;
     }
 
-    public Integer getImageurl() {
-        return imageurl;
+    public Integer getImage() {
+        return image;
     }
 
-    public void setImageurl(Integer imageurl) {
-        this.imageurl = imageurl;
+    public void setImage(Integer image) {
+        this.image = image;
     }
 
 }
